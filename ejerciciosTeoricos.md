@@ -129,22 +129,22 @@ h1, h2, h3, h4, h5, h6 { color:red;}
   color: black;
 }
 
-3.	El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser amarillo pero si es un enlace a otra página debe ser azul. 
+3.	El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser amarillo pero si es un enlace a otra página debe ser azul. <br/>
 
-#ultimo ul { color: yellow;}
-#ultimo ul li a {color:blue; }
+#ultimo ul { color: yellow;} <br/>
+#ultimo ul li a {color:blue; } <br/>
 4.	Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si están dentro de un título deben ser rojos. <br/>
-#importante {color:green;}
-h1, h2, h3, h4, h5, h6 #importante {color:red}
+#importante {color:green;} <br/>
+h1, h2, h3, h4, h5, h6 #importante {color:red} <br/>
 
 5.	Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules. <br/>
 h1[title] {color:blue;}
 
-6.	El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta para los ya visitados y, además, no deben aparecer subrayados.
+6.	El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta para los ya visitados y, además, no deben aparecer subrayados. <br/>
 
 ol li a:link {color:blue; 
 	        text-decoration: none;
-} 
+} <br/>
 ol li a:visited{color:violet; 
 	         text-decoration: none;
 }
