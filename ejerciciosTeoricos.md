@@ -34,10 +34,12 @@ border-width: 2px; <br/>
 background-color: #9EC7EB; <br/>
 color: red; <br/>
 } <br/>
+```html
 <p id="normal">Este es un párrafo</p> 
 <p id="destacado">Este es otro párrafo</p> 
 <table id="destacado"><tr><td>Esta es una tabla</td></tr></table> 
 <p id="distinto">Este es el último párrafo</p>
+```
 (ver el codigo) <br/>
 El primer párrafo tiene como id “normal”, entonces el estilo que se le aplicara es el primero que hace referencia que es para párrafos (p) que tengan como id “normal” (#normal). La fuente será arial o helvética, el tamaño de 11px y estará en negrita. 
 El segundo párrafo tiene como id “destacado”, entonces el estilo que se le aplicara es el segundo que hace referencia a todo lo que tenga id “destacado” (#destacado). Va a tener un borde solido, en color azul de 2px. 
