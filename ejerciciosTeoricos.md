@@ -20,24 +20,25 @@ Algunos ejemplos de uso de pseudoclases son: cambiar el estilo de un botón de g
 7.	El proceso denominado cascada CSS es el algoritmo que determina cómo se combinan los valores de propiedades de diferentes fuentes. Esto se hace para resolver conflictos entre reglas CSS que se aplican a un mismo elemento. 
 ¿Cómo funciona? El navegador interpreta la hoja de estilos CSS y resuelve los conflictos entre las declaraciones. Cada vez que se escribe una regla CSS, el navegador la coloca en la cascada. La regla que esté al principio de la cascada tiene más posibilidades de ser el estilo final. Se calcula el valor de especificidad de cada regla para determinar cuál prevalece. La regla que se aplica es la del selector de mayor especificidad. 
 ## Ejercicio 2
-p#normal { 
-font-family: arial,helvetica; 
-font-size: 11px; 
-font-weight: bold; 
-}
-*#destacado { 
-border-style: solid; 
-border-color: blue; 
-border-width: 2px; 
-}
-#distinto { 
-background-color: #9EC7EB; 
-color: red; 
-}
+p#normal { <br/>
+font-family: arial,helvetica; <br/>
+font-size: 11px; <br/>
+font-weight: bold; <br/>
+} <br/>
+*#destacado { <br/>
+border-style: solid; <br/>
+border-color: blue; <br/>
+border-width: 2px; <br/>
+} <br/>
+#distinto { <br/>
+background-color: #9EC7EB; <br/>
+color: red; <br/>
+} <br/>
 <p id="normal">Este es un párrafo</p> 
 <p id="destacado">Este es otro párrafo</p> 
 <table id="destacado"><tr><td>Esta es una tabla</td></tr></table> 
 <p id="distinto">Este es el último párrafo</p>
+(ver el codigo)
 El primer párrafo tiene como id “normal”, entonces el estilo que se le aplicara es el primero que hace referencia que es para párrafos (p) que tengan como id “normal” (#normal). La fuente será arial o helvética, el tamaño de 11px y estará en negrita. 
 El segundo párrafo tiene como id “destacado”, entonces el estilo que se le aplicara es el segundo que hace referencia a todo lo que tenga id “destacado” (#destacado). Va a tener un borde solido, en color azul de 2px. 
 La tabla tiene como id “destacado”, por lo tanto el estilo que se le aplicara es el segundo. Va a tener un borde solido, en color azul de 2px. 
@@ -70,7 +71,7 @@ Y este es el párrafo más importante de la obra…
 </ p> 
 <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1> 
 <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
-
+(ver el codigo)
 Otra forma de identificar es usar clases, como en este ejercicio. 
 El primer párrafo tiene class=”desarrollo”, entonces el estilo que se le aplicara es el segundo ya que es aplicable a todo lo que tenga esa clase. Dice que tendrá una fuente de 8px. 
 El segundo párrafo tiene class="quitar", entonces el estilo será el primero ya que es aplicable a párrafos (p) que tengan como clase quitar (.quitar). La fuente será en color rojo. 
@@ -81,13 +82,13 @@ El ultimo párrafo tiene class="quitar importante", por lo tanto se combinan dos
 
 ## Ejercicio 4 
 Dadas las siguientes declaraciones: 
-* {color:green; } 
-a:link {color:gray } 
-a:visited{color:blue } 
-a:hover {color:fuchsia } 
-a:active {color:red } 
-p {font-family: arial,helvetica;font-size: 10px;color:black; } 
-.contenido{font-size: 14px;font-weight: bold; } 
+* {color:green; } <br/>
+a:link {color:gray } <br/>
+a:visited{color:blue } <br/>
+a:hover {color:fuchsia } <br/>
+a:active {color:red } <br/>
+p {font-family: arial,helvetica;font-size: 10px;color:black; } <br/>
+.contenido{font-size: 14px;font-weight: bold; } <br/>
 
 Analizar los siguientes códigos y comparar sus efectos. Explicar:
 <body> 
@@ -103,6 +104,7 @@ enlace</a></td>
 </tr> 
 </table> 
 </body> 
+(ver el codigo)
 El primer párrafo aplicara los estilos desde lo mas general a lo mas especifico. Tomara el estilo p pero luego de .contenido tomara el tamaño de la fuente es la negrita y por ultimo del estilo definido en el elemento cambiara la negrita a normal. 
 La primer celda de la tabla tendrá fuente verde, ya que el primer estilo se aplica a todo.
 Luego en la segunda celda de la tabla hay un enlace, para esto hay varios estilos definidos. a:link indica que si el enlace aun no fue visitado se mostrara en color gris, a:visited indica que si ya fue visitado se mostrara en azul y a:active indica que si ponemos el mouse sobre el cambiara de color a fuchsia.
@@ -117,6 +119,7 @@ Luego en la segunda celda de la tabla hay un enlace, para esto hay varios estilo
 </tr> 
 </table> 
 </body> 
+(ver el codigo)
 Al parrafo se le aplica el estilo p, la primer celda de la tabla va a tener el estilo .contenido ya que se encuenta dentro del body y no tiene un estilo mas especifico definido. Por ultimo, en la segunda celda de la tabla hay un enlace, para esto hay varios estilos definidos. a:link indica que si el enlace aun no fue visitado se mostrara en color gris, a:visited indica que si ya fue visitado se mostrara en azul y a:active indica que si ponemos el mouse sobre el cambiara de color a fuchsia.
 
 ## Ejercicio 5 
@@ -151,6 +154,7 @@ ol li a:visited{color:violet;
 
 
 ## Ejercicio 6
+(ver el codigo o los archivos subidos)
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html lang="es">
