@@ -12,9 +12,9 @@ Selector universal: Selecciona todos los elementos, por ejemplo: * { }
 - Selector de elemento: Selecciona todos los elementos HTML de un tipo determinado, por ejemplo: p
 5.	Una pseudo-clase es una palabra clave que se añade a los selectores de CSS para definir un estilo específico a un elemento. Se utilizan para aplicar estilos cuando el elemento se encuentra en un estado determinado. 
 Las pseudoclases más utilizadas para aplicar estilos a los vínculos son: 
--	:link: Selecciona los enlaces no visitados
--	:visited: Selecciona los enlaces visitados
--	:hover: Aplica un estilo cuando el usuario pasa el ratón sobre el enlace
+-	:link Selecciona los enlaces no visitados
+-	:visited Selecciona los enlaces visitados
+-	:hover Aplica un estilo cuando el usuario pasa el ratón sobre el enlace
 Algunos ejemplos de uso de pseudoclases son: cambiar el estilo de un botón de gris a verde al pasar el ratón sobre él, mostrar los enlaces no visitados en azul, pero una vez visitados, se vuelven morados.
 6.	La herencia es el proceso por el cual algunas propiedades CSS aplicadas a una etiqueta se pasan a las etiquetas anidadas. Si un elemento no tiene un valor en cascada para una determinada propiedad, puede heredar uno de un elemento antecesor. 
 7.	El proceso denominado cascada CSS es el algoritmo que determina cómo se combinan los valores de propiedades de diferentes fuentes. Esto se hace para resolver conflictos entre reglas CSS que se aplican a un mismo elemento. 
@@ -82,7 +82,7 @@ El ultimo párrafo tiene class="quitar importante", por lo tanto se combinan dos
 
 ## Ejercicio 4 
 Dadas las siguientes declaraciones: 
-* {color:green; } <br/>
+*{color:green; } <br/>
 a:link {color:gray } <br/>
 a:visited{color:blue } <br/>
 a:hover {color:fuchsia } <br/>
