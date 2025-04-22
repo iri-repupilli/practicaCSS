@@ -40,7 +40,6 @@ color: red; <br/>
 <table id="destacado"><tr><td>Esta es una tabla</td></tr></table> 
 <p id="distinto">Este es el último párrafo</p>
 ```
-(ver el codigo) <br/>
 El primer párrafo tiene como id “normal”, entonces el estilo que se le aplicara es el primero que hace referencia que es para párrafos (p) que tengan como id “normal” (#normal). La fuente será arial o helvética, el tamaño de 11px y estará en negrita. 
 El segundo párrafo tiene como id “destacado”, entonces el estilo que se le aplicara es el segundo que hace referencia a todo lo que tenga id “destacado” (#destacado). Va a tener un borde solido, en color azul de 2px. 
 La tabla tiene como id “destacado”, por lo tanto el estilo que se le aplicara es el segundo. Va a tener un borde solido, en color azul de 2px. 
@@ -55,6 +54,7 @@ font-size: 8px; <br/>
 .importante { <br/>
 font-size: 20px; <br/>
 } <br/>
+```html
 <p class="desarrollo"> 
 En este primer párrafo trataremos lo siguiente: 
 <br />xxxxxxxxxxxxxxxxxxxxxxxxx 
@@ -73,7 +73,7 @@ Y este es el párrafo más importante de la obra…
 </ p> 
 <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1> 
 <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
-(ver el codigo) <br/>
+```
 Otra forma de identificar es usar clases, como en este ejercicio. 
 El primer párrafo tiene class=”desarrollo”, entonces el estilo que se le aplicara es el segundo ya que es aplicable a todo lo que tenga esa clase. Dice que tendrá una fuente de 8px. 
 El segundo párrafo tiene class="quitar", entonces el estilo será el primero ya que es aplicable a párrafos (p) que tengan como clase quitar (.quitar). La fuente será en color rojo. 
@@ -93,6 +93,7 @@ p {font-family: arial,helvetica;font-size: 10px;color:black; } <br/>
 .contenido{font-size: 14px;font-weight: bold; } <br/>
 
 Analizar los siguientes códigos y comparar sus efectos. Explicar:
+```html
 <body> 
 <p class="contenido" style="font-weight: normal;"> 
 Este es un texto ...............</p> 
@@ -105,11 +106,12 @@ Este es un texto ...............</p>
 enlace</a></td> 
 </tr> 
 </table> 
-</body> 
-(ver el codigo) <br/>
+</body>
+```
 El primer párrafo aplicara los estilos desde lo mas general a lo mas especifico. Tomara el estilo p pero luego de .contenido tomara el tamaño de la fuente es la negrita y por ultimo del estilo definido en el elemento cambiara la negrita a normal. 
 La primer celda de la tabla tendrá fuente verde, ya que el primer estilo se aplica a todo.
 Luego en la segunda celda de la tabla hay un enlace, para esto hay varios estilos definidos. a:link indica que si el enlace aun no fue visitado se mostrara en color gris, a:visited indica que si ya fue visitado se mostrara en azul y a:active indica que si ponemos el mouse sobre el cambiara de color a fuchsia.
+```html
 <body class="contenido"> 
 <p> Este es un texto................</p> 
 <table> 
@@ -120,8 +122,8 @@ Luego en la segunda celda de la tabla hay un enlace, para esto hay varios estilo
 <td><a href="http://www.google.com.ar">con un enlace</a></td> 
 </tr> 
 </table> 
-</body> 
-(ver el codigo) <br/>
+</body>
+```
 Al parrafo se le aplica el estilo p, la primer celda de la tabla va a tener el estilo .contenido ya que se encuenta dentro del body y no tiene un estilo mas especifico definido. Por ultimo, en la segunda celda de la tabla hay un enlace, para esto hay varios estilos definidos. a:link indica que si el enlace aun no fue visitado se mostrara en color gris, a:visited indica que si ya fue visitado se mostrara en azul y a:active indica que si ponemos el mouse sobre el cambiara de color a fuchsia.
 
 ## Ejercicio 5 
@@ -156,7 +158,7 @@ ol li a:visited{color:violet;
 
 
 ## Ejercicio 6
-(ver el codigo o los archivos subidos)
+```html
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html lang="es">
@@ -197,3 +199,4 @@ ol li a:visited{color:violet;
   <DIV id=pie class="estilopie">Ingeniería en Sistemas de Información - Universidad Tecnológica Nacional Rosario</DIV> <!—cambio-- >
   <p>&nbsp;</p>
 </BODY>
+```
