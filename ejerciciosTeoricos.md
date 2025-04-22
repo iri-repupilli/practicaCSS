@@ -121,12 +121,11 @@ Al parrafo se le aplica el estilo p, la primer celda de la tabla va a tener el e
 
 ## Ejercicio 5 
 En cada caso, declarar una regla CSS que produzca el siguiente efecto: 
-1.	Los textos enfatizados dentro de cualquier título deben ser rojos. 
-h1, h2, h3, h4, h5, h6 { color:red;
-}
+1.	Los textos enfatizados dentro de cualquier título deben ser rojos. <br/>
+h1, h2, h3, h4, h5, h6 { color:red;}
 
-2.	Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a su vez esté dentro de un bloque debe ser color negro. 
-* p [href] {
+2.	Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a su vez esté dentro de un bloque debe ser color negro. <br/>
+*p [href] {
   color: black;
 }
 
@@ -134,11 +133,11 @@ h1, h2, h3, h4, h5, h6 { color:red;
 
 #ultimo ul { color: yellow;}
 #ultimo ul li a {color:blue; }
-4.	Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si están dentro de un título deben ser rojos. 
+4.	Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si están dentro de un título deben ser rojos. <br/>
 #importante {color:green;}
 h1, h2, h3, h4, h5, h6 #importante {color:red}
 
-5.	Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules. 
+5.	Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules. <br/>
 h1[title] {color:blue;}
 
 6.	El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta para los ya visitados y, además, no deben aparecer subrayados.
