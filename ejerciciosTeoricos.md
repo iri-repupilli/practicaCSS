@@ -12,9 +12,9 @@ Selector universal: Selecciona todos los elementos, por ejemplo: * { }
 - Selector de elemento: Selecciona todos los elementos HTML de un tipo determinado, por ejemplo: p
 5.	Una pseudo-clase es una palabra clave que se añade a los selectores de CSS para definir un estilo específico a un elemento. Se utilizan para aplicar estilos cuando el elemento se encuentra en un estado determinado. 
 Las pseudoclases más utilizadas para aplicar estilos a los vínculos son: 
-•	:link: Selecciona los enlaces no visitados
-•	:visited: Selecciona los enlaces visitados
-•	:hover: Aplica un estilo cuando el usuario pasa el ratón sobre el enlace
+-	:link: Selecciona los enlaces no visitados
+-	:visited: Selecciona los enlaces visitados
+-	:hover: Aplica un estilo cuando el usuario pasa el ratón sobre el enlace
 Algunos ejemplos de uso de pseudoclases son: cambiar el estilo de un botón de gris a verde al pasar el ratón sobre él, mostrar los enlaces no visitados en azul, pero una vez visitados, se vuelven morados.
 6.	La herencia es el proceso por el cual algunas propiedades CSS aplicadas a una etiqueta se pasan a las etiquetas anidadas. Si un elemento no tiene un valor en cascada para una determinada propiedad, puede heredar uno de un elemento antecesor. 
 7.	El proceso denominado cascada CSS es el algoritmo que determina cómo se combinan los valores de propiedades de diferentes fuentes. Esto se hace para resolver conflictos entre reglas CSS que se aplican a un mismo elemento. 
@@ -38,21 +38,21 @@ color: red; <br/>
 <p id="destacado">Este es otro párrafo</p> 
 <table id="destacado"><tr><td>Esta es una tabla</td></tr></table> 
 <p id="distinto">Este es el último párrafo</p>
-(ver el codigo)
+(ver el codigo) <br/>
 El primer párrafo tiene como id “normal”, entonces el estilo que se le aplicara es el primero que hace referencia que es para párrafos (p) que tengan como id “normal” (#normal). La fuente será arial o helvética, el tamaño de 11px y estará en negrita. 
 El segundo párrafo tiene como id “destacado”, entonces el estilo que se le aplicara es el segundo que hace referencia a todo lo que tenga id “destacado” (#destacado). Va a tener un borde solido, en color azul de 2px. 
 La tabla tiene como id “destacado”, por lo tanto el estilo que se le aplicara es el segundo. Va a tener un borde solido, en color azul de 2px. 
 El tercer párrafo tiene id=”distinto”, entonces el estilo que se le aplicara es el tercero ya que hace referencia a todo lo que tenga por id="distinto". Va a tener un fondo de color medio celestito y la letra será en color rojo.
 
 ## Ejercicio 3
-p.quitar {
-color: red; 
-}
-*.desarrollo { 
-font-size: 8px; 
-.importante { 
-font-size: 20px; 
-}
+p.quitar { <br/>
+color: red; <br/>
+} <br/>
+*.desarrollo { <br/>
+font-size: 8px; <br/>
+.importante { <br/>
+font-size: 20px; <br/>
+} <br/>
 <p class="desarrollo"> 
 En este primer párrafo trataremos lo siguiente: 
 <br />xxxxxxxxxxxxxxxxxxxxxxxxx 
@@ -71,7 +71,7 @@ Y este es el párrafo más importante de la obra…
 </ p> 
 <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1> 
 <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
-(ver el codigo)
+(ver el codigo) <br/>
 Otra forma de identificar es usar clases, como en este ejercicio. 
 El primer párrafo tiene class=”desarrollo”, entonces el estilo que se le aplicara es el segundo ya que es aplicable a todo lo que tenga esa clase. Dice que tendrá una fuente de 8px. 
 El segundo párrafo tiene class="quitar", entonces el estilo será el primero ya que es aplicable a párrafos (p) que tengan como clase quitar (.quitar). La fuente será en color rojo. 
@@ -104,7 +104,7 @@ enlace</a></td>
 </tr> 
 </table> 
 </body> 
-(ver el codigo)
+(ver el codigo) <br/>
 El primer párrafo aplicara los estilos desde lo mas general a lo mas especifico. Tomara el estilo p pero luego de .contenido tomara el tamaño de la fuente es la negrita y por ultimo del estilo definido en el elemento cambiara la negrita a normal. 
 La primer celda de la tabla tendrá fuente verde, ya que el primer estilo se aplica a todo.
 Luego en la segunda celda de la tabla hay un enlace, para esto hay varios estilos definidos. a:link indica que si el enlace aun no fue visitado se mostrara en color gris, a:visited indica que si ya fue visitado se mostrara en azul y a:active indica que si ponemos el mouse sobre el cambiara de color a fuchsia.
@@ -119,7 +119,7 @@ Luego en la segunda celda de la tabla hay un enlace, para esto hay varios estilo
 </tr> 
 </table> 
 </body> 
-(ver el codigo)
+(ver el codigo) <br/>
 Al parrafo se le aplica el estilo p, la primer celda de la tabla va a tener el estilo .contenido ya que se encuenta dentro del body y no tiene un estilo mas especifico definido. Por ultimo, en la segunda celda de la tabla hay un enlace, para esto hay varios estilos definidos. a:link indica que si el enlace aun no fue visitado se mostrara en color gris, a:visited indica que si ya fue visitado se mostrara en azul y a:active indica que si ponemos el mouse sobre el cambiara de color a fuchsia.
 
 ## Ejercicio 5 
