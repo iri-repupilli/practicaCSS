@@ -81,7 +81,7 @@ El titulo h1 se vera con el estilo predeterminado ya que aunque tenga class="qui
 El ultimo párrafo tiene class="quitar importante", por lo tanto se combinan dos estilos y se vera con fuente roja y de 20px. 
 
 ## Ejercicio 4 
-Dadas las siguientes declaraciones: 
+Dadas las siguientes declaraciones: <br/>
 *{color:green; } <br/>
 a:link {color:gray } <br/>
 a:visited{color:blue } <br/>
